@@ -98,6 +98,23 @@ class Jugueria:
             if v.pagado == "n":
                 estado = "Fiado"
             print(f"Cliente: {v.cliente} | Producto: {v.producto} |{estado}| Total: S/ {v.total:.2f}")
+            
+    # ------------ Modificación de Deudor a Pagado ------------
+    def modifica_deudor(self):
+        buscar = input("Nombre del cliente deudor: ").strip().lower()
+        
+        for v in self.ventas:
+            if v.cliente.lower() == buscar and v.pagado == "n":
+                v.pagado = "s"  
+                
+        ## Modifica en el archivo de texto - Pasa de fiado a pagado
+                with open("ventas.txt", "w") as f:
+                    for venta in self.ventas:
+                        f.write(f"{venta.cliente}|{venta.producto}|{venta.cantidad}|{venta.precio}|{venta.pagado}\n")
+                
+                print(f"El pedido de {v.cliente} está pagado")
+                return
+        print("No se encontró ningún deudor con el nombre ingresado")
 
     # ---------------- Balance ----------------
     def ver_balance(self):
