@@ -60,7 +60,7 @@ class Jugueria:
                     linea = linea.strip()
                     if not linea:
                         continue
-                    cliente, producto, cantidad, precio, pagado = linea.split(",")
+                    cliente, producto, cantidad, precio, pagado = linea.split("|")
                     
                     venta = Venta(cliente, producto, int(cantidad), float(precio), pagado)
                     self.ventas.append(venta)
