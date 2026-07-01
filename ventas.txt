@@ -1,0 +1,52 @@
+Carlos|Pan con pollo + Jugo de Papaya|2|9.5|s
+Pepe|Pan con tortilla + Jugo de Papaya|2|8.5|s
+Anderson|Pan con aceituna + Jugo Surtido|1|9.5|s
+Gabriela|Pan con hot dog + Jugo de naranja|2|5.5|s
+Pablo|Pan con pollo + Jugo de Papaya|3|9.5|s
+Pepa|Pan con tortilla + Jugo de plátano c/leche|4|10.5|n
+Andres|Pan con hot dog + Jugo de Papaya|3|8.5|n
+Benito|Pan con hot dog + Jugo de naranja|2|5.5|s
+Patricio|Pan con lomo + Jugo de mango c/leche|1|13.0|s
+Sofia|Pan con palta + Jugo de plátano c/leche|2|10.5|n
+Ulises|Pan con tortilla + Jugo de naranja|1|5.5|n
+Luciana|Pan con hot dog + Jugo de plátano c/leche|4|10.5|n
+Alejandra|Pan con lomo + Jugo de Papaya|3|10.0|s
+Rafael|Pan con aceituna + Jugo Surtido|3|9.5|s
+Gustavo|Pan con palta + Jugo Surtido|1|9.5|s
+Lucho|Pan con lomo + Jugo de Mango|3|12.0|n
+Alvaro|Pan con pollo + Jugo Surtido|2|10.5|s
+Ignacio|Pan con queso fresco + Jugo de mango c/leche|4|11.5|n
+Elias|Pan con hot dog + Jugo Surtido|2|9.5|n
+Vanesa|Pan con queso fresco + Jugo de mango c/leche|2|11.5|n
+Jesus|Pan con pollo + Jugo de plátano c/leche|2|11.5|s
+Bruno|Pan con tortilla + Jugo Surtido|1|9.5|s
+Hugo|Pan con aceituna + Jugo de Papaya|1|8.5|s
+Paolo|Pan con palta + Jugo Surtido|1|9.5|n
+Diego|Pan con tortilla + Jugo de plátano c/leche|1|10.5|s
+Delia|Pan con hot dog + Jugo de Papaya|2|8.5|s
+Carmen|Pan con pollo + Jugo de Papaya|3|9.5|s
+Pamela|Pan con hot dog + Jugo de plátano c/leche|3|10.5|s
+Ariana|Pan con hot dog + Jugo de Papaya|3|8.5|s
+Peter|Pan con tortilla + Jugo Surtido|2|9.5|s
+Gabriel|Pan con queso fresco + Jugo de Papaya|1|8.5|s
+Ines|Pan con lomo + Jugo Surtido|2|11.0|s
+Martin|Pan con aceituna + Jugo de Papaya|2|8.5|s
+Mario|Pan con lomo + Jugo de naranja|2|7.0|n
+Ricardo|Pan con hot dog + Jugo de naranja|3|5.5|s
+Polonio|Pan con palta + Jugo de naranja|2|5.5|s
+Vania|Pan con aceituna + Jugo de Mango|1|10.5|s
+Uriel|Pan con pollo + Jugo de naranja|2|6.5|s
+Jimena|Pan con aceituna + Jugo de fresa c/leche|5|11.5|s
+Renato|Pan con pollo + Jugo de fresa c/leche|2|12.5|s
+Barbara|Pan con hot dog + Jugo de Papaya|2|8.5|s
+Malena|Pan con aceituna + Jugo Surtido|3|9.5|s
+Keila|Pan con pollo + Jugo de mango c/leche|1|12.5|s
+Sara|Pan con hot dog + Jugo de plátano c/leche|1|10.5|s
+Liliana|Pan con lomo + Jugo de mango c/leche|5|13.0|s
+Amir|Pan con queso fresco + Jugo de plátano c/leche|1|10.5|s
+Coral|Pan con hot dog + Jugo de Papaya|2|8.5|s
+Bartolo|Pan con hot dog + Jugo de Mango|1|10.5|s
+Yaritza|Pan con pollo + Jugo de Mango|2|11.5|n
+Tobias|Pan con hot dog + Jugo de Papaya|2|8.5|s
+Luis|Pan con aceituna + Jugo de Mango|2|10.5|s
+Jhon|Pan con lomo + Jugo de naranja|1|7.0|s
