@@ -1,5 +1,5 @@
 from venta import Venta
-from validaciones import leer_entero
+from validaciones import leer_entero, validar_nombre, validar_opcion, validar_opcion_lista
 from archivo import guardar_venta
 
 class Jugueria:
@@ -23,18 +23,18 @@ class Jugueria:
         print("\n===== SANDWICHES - JUGUERÍA ACUARIO =====")
         for i, s in enumerate(self.sandwiches, 1):
             print(f"{i}. {s} - S/ {self.precios_sandwiches[i-1]:.2f}")
-        opc_s = int(input("Seleccione número de sándwich: ")) - 1
+        opc_s = validar_opcion_lista("Seleccione número de sándwich: ", len(self.sandwiches)) - 1
         
         ## CARTA DE JUGOS
         print("\n===== JUGOS - JUGUERÍA ACUARIO =====")
         for i, j in enumerate(self.jugos, 1):
             print(f"{i}. {j} - S/ {self.precios_jugos[i-1]:.2f}")
-        opc_j = int(input("Seleccione número de jugo: ")) - 1
+        opc_j = validar_opcion_lista("Seleccione número de jugo: ", len(self.jugos)) - 1
 
         ## DATOS EXTRAS PARA INGRESAR AL SISTEMA
-        cliente = input("Nombre del cliente: ")
+        cliente = validar_nombre("Nombre del cliente: ")
         cantidad = leer_entero("Cantidad de combos: ")
-        pagado = input("¿Pagó? (s/n): ").strip().lower()
+        pagado = validar_opcion("¿Pagará o Fiará? (s/n): ").strip().lower()
         
         ## SE CALCULA EL TOTAL Y SE ARMAN LOS COMBOS DE SANDWICHES CON JUGOS
         precio_combo = self.precios_sandwiches[opc_s] + self.precios_jugos[opc_j]
@@ -49,23 +49,6 @@ class Jugueria:
         guardar_venta(venta)
 
         print(f"Venta registrada. Total: S/ {total:.2f}")
-
-    # ---------------- Cargar ventas ----------------
-    def cargar_ventas(self):
-        
-        self.ventas = []
-        try:
-            with open("ventas.txt", "r") as f:
-                for linea in f:
-                    linea = linea.strip()
-                    if not linea:
-                        continue
-                    cliente, producto, cantidad, precio, pagado = linea.split("|")
-                    
-                    venta = Venta(cliente, producto, int(cantidad), float(precio), pagado)
-                    self.ventas.append(venta)
-        except FileNotFoundError:
-            print("No existe archivo de ventas. Se iniciará vacío")
 
     # ---------------- Deudores ----------------
     def consultar_deudores(self):
@@ -98,10 +81,10 @@ class Jugueria:
             if v.pagado == "n":
                 estado = "Fiado"
             print(f"Cliente: {v.cliente} | Producto: {v.producto} |{estado}| Total: S/ {v.total:.2f}")
-            
+
     # ------------ Modificación de Deudor a Pagado ------------
-    def modifica_deudor(self):
-        buscar = input("Nombre del cliente deudor: ").strip().lower()
+    def modificar_deudor(self):
+        buscar = validar_nombre("Nombre del cliente deudor: ").strip().lower()
         
         for v in self.ventas:
             if v.cliente.lower() == buscar and v.pagado == "n":
@@ -131,3 +114,22 @@ class Jugueria:
         print("\n=== BALANCE ===")
         print(f"Ingresos: S/ {ingresos:.2f}")
         print(f"Deben: S/ {deben:.2f}")
+
+    # ---------------- Cargar ventas ----------------
+    def cargar_ventas(self):
+        
+        self.ventas = []
+        try:
+            with open("ventas.txt", "r") as f:
+                for linea in f:
+                    linea = linea.strip()
+                    if not linea:
+                        continue
+                    cliente, producto, cantidad, precio, pagado = linea.split("|")
+                    
+                    venta = Venta(cliente, producto, int(cantidad), float(precio), pagado)
+                    self.ventas.append(venta)
+        except FileNotFoundError:
+            print("No existe archivo de ventas. Se iniciará vacío")
+    
+    
